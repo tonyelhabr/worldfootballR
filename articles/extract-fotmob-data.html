@@ -56,7 +56,7 @@
   <a href="../reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
      
     <span class="caret"></span>
@@ -106,7 +106,7 @@
       <h1 data-toc-skip>Extracting data from fotmob</h1>
                         <h4 data-toc-skip class="author">Tony ElHabr</h4>
             
-            <h4 data-toc-skip class="date">2022-02-21</h4>
+            <h4 data-toc-skip class="date">2022-03-05</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/JaseZiv/worldfootballR/blob/HEAD/vignettes/extract-fotmob-data.Rmd" class="external-link"><code>vignettes/extract-fotmob-data.Rmd</code></a></small>
       <div class="hidden name"><code>extract-fotmob-data.Rmd</code></div>
@@ -195,7 +195,7 @@
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">results</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/fotmob_get_matches_by_date.html">fotmob_get_matches_by_date</a></span><span class="op">(</span>date <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"20210925"</span>, <span class="st">"20210926"</span><span class="op">)</span><span class="op">)</span>
 <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/glimpse.html" class="external-link">glimpse</a></span><span class="op">(</span><span class="va">results</span><span class="op">)</span>
-<span class="co">#&gt; Rows: 267</span>
+<span class="co">#&gt; Rows: 268</span>
 <span class="co">#&gt; Columns: 12</span>
 <span class="co">#&gt; $ ccode              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "USA", "ENG", "GER", "ENG", "ESP", "MEX", "FRA", "U…</span>
 <span class="co">#&gt; $ id                 <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 872390, 47, 54, 873679, 87, 874077, 53, 874044, 873…</span>
@@ -238,7 +238,7 @@
 <span class="co">#&gt; $ statusId        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 6, 6, 6, 6, 6, 6, 6, 6, 6</span>
 <span class="co">#&gt; $ tournamentStage <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "6", "6", "6", "6", "6", "6", "6", "6", "6"</span>
 <span class="co">#&gt; $ status          <span style="color: #949494; font-style: italic;">&lt;df[,8]&gt;</span> &lt;data.frame[9 x 8]&gt;</span>
-<span class="co">#&gt; $ timeTS          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1.632544e+12, 1.632544e+12, 1.632553e+12, 1.632553e+12…</span>
+<span class="co">#&gt; $ timeTS          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1.632551e+12, 1.632551e+12, 1.632560e+12, 1.632560e+12…</span>
 <span class="co">#&gt; $ tv              <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA</span></code></pre></div>
 </div>
 <div class="section level3">
@@ -259,17 +259,17 @@
 <span class="co">#&gt; Rows: 40</span>
 <span class="co">#&gt; Columns: 14</span>
 <span class="co">#&gt; $ table_type  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "away", "away", "away", "away", "away", "away", "away", "a…</span>
-<span class="co">#&gt; $ name        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Man City", "Liverpool", "Chelsea", "Wolves", "Man United"…</span>
-<span class="co">#&gt; $ id          <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 8456, 8650, 8455, 8602, 10260, 8654, 10204, 8586, 9825, 84…</span>
+<span class="co">#&gt; $ name        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Man City", "Liverpool", "Chelsea", "Man United", "Wolves"…</span>
+<span class="co">#&gt; $ id          <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 8456, 8650, 8455, 10260, 8602, 8654, 8586, 10204, 9825, 10…</span>
 <span class="co">#&gt; $ pageUrl     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "/teams/8456/overview/manchester-city", "/teams/8650/overv…</span>
 <span class="co">#&gt; $ deduction   <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…</span>
-<span class="co">#&gt; $ played      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 13, 13, 13, 12, 13, 13, 13, 11, 11, 13, 12, 12, 13, 12, 11…</span>
-<span class="co">#&gt; $ wins        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 10, 8, 8, 7, 6, 6, 4, 5, 5, 3, 4, 3, 2, 2, 2, 1, 1, 2, 1, …</span>
-<span class="co">#&gt; $ draws       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 2, 3, 3, 2, 5, 3, 7, 2, 1, 4, 0, 2, 4, 4, 3, 6, 5, 2, 4, 3…</span>
-<span class="co">#&gt; $ losses      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 1, 2, 2, 3, 2, 4, 2, 4, 5, 6, 8, 7, 7, 6, 6, 5, 6, 8, 6, 8…</span>
-<span class="co">#&gt; $ scoresStr   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "27-8", "34-13", "22-8", "13-8", "23-18", "21-15", "15-14"…</span>
-<span class="co">#&gt; $ goalConDiff <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 19, 21, 14, 5, 5, 6, 1, -3, -1, -11, -6, -3, -12, -15, -9,…</span>
-<span class="co">#&gt; $ pts         <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 32, 27, 27, 23, 23, 21, 19, 17, 16, 13, 12, 11, 10, 10, 9,…</span>
+<span class="co">#&gt; $ played      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 14, 13, 13, 13, 14, 13, 13, 13, 11, 13, 13, 13, 13, 12, 12…</span>
+<span class="co">#&gt; $ wins        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 11, 8, 8, 6, 7, 6, 6, 4, 5, 5, 3, 3, 2, 3, 2, 2, 2, 1, 2, …</span>
+<span class="co">#&gt; $ draws       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 2, 3, 3, 5, 2, 3, 2, 7, 1, 0, 4, 3, 6, 3, 4, 4, 4, 6, 2, 3…</span>
+<span class="co">#&gt; $ losses      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 1, 2, 2, 2, 5, 4, 5, 2, 5, 8, 6, 7, 5, 6, 6, 7, 7, 6, 9, 8…</span>
+<span class="co">#&gt; $ scoresStr   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "28-8", "34-13", "22-8", "23-18", "14-11", "21-15", "17-17…</span>
+<span class="co">#&gt; $ goalConDiff <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 20, 21, 14, 5, 3, 6, 0, 1, -1, -4, -11, -3, -6, -7, -11, -…</span>
+<span class="co">#&gt; $ pts         <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 35, 27, 27, 23, 23, 21, 20, 19, 16, 15, 13, 12, 12, 12, 10…</span>
 <span class="co">#&gt; $ idx         <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,…</span>
 <span class="co">#&gt; $ qualColor   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "#2AD572", "#2AD572", "#2AD572", "#2AD572", "#0046A7", NA,…</span></code></pre></div>
 <hr>
@@ -443,7 +443,7 @@
 <span class="co">#&gt; $ stats_minutes_played                 <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 90, 68, 90, 89, 69, 90</span>
 <span class="co">#&gt; $ stats_goals                          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1, 0, 1, 1, 0, 1</span>
 <span class="co">#&gt; $ stats_assists                        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1, 0, 0, 0, 0, 0</span>
-<span class="co">#&gt; $ stats_total_shots                    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1, 1, 1, 2, 0, 3</span>
+<span class="co">#&gt; $ stats_total_shots                    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 3, 1, 1, 2, 0, 4</span>
 <span class="co">#&gt; $ stats_key_passes                     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 2, 0, 0, 1, 0, 2</span>
 <span class="co">#&gt; $ stats_expected_goals_x_g             <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0.51, 0.06, 0.40, 0.54, NA, 0.66</span>
 <span class="co">#&gt; $ stats_expected_goals_on_target_x_got <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0.97, 0.04, 0.83, 0.55, NA, 0.54</span>
@@ -459,10 +459,10 @@
 <span class="co">#&gt; $ stats_was_fouled                     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1, 2, 2, 1, 1, 0</span>
 <span class="co">#&gt; $ stats_fouls_committed                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0, 3, 2, 1, 4, 1</span>
 <span class="co">#&gt; $ stats_fantasy_points                 <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> NA, 2, 7, 6, 5, 7</span>
-<span class="co">#&gt; $ stats_tackles_won                    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> NA, 0, 0, 0, 0, 0</span>
-<span class="co">#&gt; $ stats_aerial_duels_won               <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> NA, NA, 0, NA, NA, 0</span>
+<span class="co">#&gt; $ stats_tackles_won                    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> NA, 0, 0, NA, 0, 0</span>
 <span class="co">#&gt; $ stats_offsides                       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> NA, NA, NA, 1, 1, 1</span>
-<span class="co">#&gt; $ stats_big_chance_missed              <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> NA, NA, NA, NA, NA, 1</span></code></pre></div>
+<span class="co">#&gt; $ stats_big_chance_missed              <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> NA, NA, NA, NA, NA, 1</span>
+<span class="co">#&gt; $ stats_aerial_duels_won               <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> NA, NA, NA, NA, NA, 0</span></code></pre></div>
 </div>
 </div>
   </div>
