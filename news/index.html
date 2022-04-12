@@ -23,7 +23,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">worldfootballR</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.4.10.2000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.5.1.2000</span>
       </span>
     </div>
 
@@ -76,25 +76,67 @@
     </div>
 
     <div class="section level2">
-<h2 class="page-header" data-toc-text="0.4.10.2000" id="worldfootballr-04102000">worldfootballR 0.4.10.2000<a class="anchor" aria-label="anchor" href="#worldfootballr-04102000"></a></h2>
+<h2 class="page-header" data-toc-text="0.5.1.2000" id="worldfootballr-0512000">worldfootballR 0.5.1.2000<a class="anchor" aria-label="anchor" href="#worldfootballr-0512000"></a></h2>
 <div class="section level4">
-<h4 id="new-functions-0-4-10-2000">New functions<a class="anchor" aria-label="anchor" href="#new-functions-0-4-10-2000"></a></h4>
+<h4 id="improvements-0-5-1-2000">Improvements<a class="anchor" aria-label="anchor" href="#improvements-0-5-1-2000"></a></h4>
 <ul><li>
+<code>fotmob_get_league_matches</code> and <code>fotmob_get_league_tables</code> now check 2 places for the league endpoint since it changes occassionally.</li>
+<li>
+<code>fotmob_get_match_players</code> gets 3 additional columns: <code>match_id</code>, <code>team_id</code>, <code>team_name</code>. <a href="https://github.com/JaseZiv/worldfootballR/issues/105" class="external-link">#105</a>
+</li>
+</ul><hr></div>
+</div>
+    <div class="section level2">
+<h2 class="page-header" data-toc-text="0.5.1.1000" id="worldfootballr-0511000">worldfootballR 0.5.1.1000<a class="anchor" aria-label="anchor" href="#worldfootballr-0511000"></a></h2>
+<ul><li>Set minimum R version to 4.0.0</li>
+</ul><hr></div>
+    <div class="section level2">
+<h2 class="page-header" data-toc-text="0.5.1" id="worldfootballr-051">worldfootballR 0.5.1<small>2022-03-25</small><a class="anchor" aria-label="anchor" href="#worldfootballr-051"></a></h2>
+<ul><li>Modifications based on CRAN feedback to updates for CRAN submission</li>
+</ul></div>
+    <div class="section level2">
+<h2 class="page-header" data-toc-text="0.5.0" id="worldfootballr-050">worldfootballR 0.5.0<small>2022-03-21</small><a class="anchor" aria-label="anchor" href="#worldfootballr-050"></a></h2>
+<div class="section level4">
+<h4 id="new-functions-0-5-0">New functions<a class="anchor" aria-label="anchor" href="#new-functions-0-5-0"></a></h4>
+<ul><li>
+<code><a href="../reference/fb_team_match_log_stats.html">fb_team_match_log_stats()</a></code> - to get match logs of selected stat types for a team(s) for all matches played in a season</li>
+<li>
+<code><a href="../reference/fotmob_get_league_ids.html">fotmob_get_league_ids()</a></code> - to get Fotmob’s league ids, which can be specified as an alternative to <code>country</code> and <code>league_name</code> in <code><a href="../reference/fotmob_get_league_matches.html">fotmob_get_league_matches()</a></code> and <code><a href="../reference/fotmob_get_league_tables.html">fotmob_get_league_tables()</a></code>
+</li>
+<li>
+<code><a href="../reference/fotmob_get_season_stats.html">fotmob_get_season_stats()</a></code> - to get stats for one or more leagues, at team or player level</li>
+<li>
 <code><a href="../reference/fotmob_get_league_matches.html">fotmob_get_league_matches()</a></code> - to select matches for one or more leagues</li>
 <li>
 <code><a href="../reference/fotmob_get_league_tables.html">fotmob_get_league_tables()</a></code> - to get standings for one or more leagues</li>
-</ul></div>
-</div>
-    <div class="section level2">
-<h2 class="page-header" data-toc-text="0.4.10.1000" id="worldfootballr-04101000">worldfootballR 0.4.10.1000<a class="anchor" aria-label="anchor" href="#worldfootballr-04101000"></a></h2>
-<div class="section level4">
-<h4 id="new-functions-0-4-10-1000">New functions<a class="anchor" aria-label="anchor" href="#new-functions-0-4-10-1000"></a></h4>
-<ul><li>
+<li>
 <code><a href="../reference/fotmob_get_matches_by_date.html">fotmob_get_matches_by_date()</a></code> - to select matches occurring on specific day(s)</li>
 <li>
 <code><a href="../reference/fotmob_get_match_details.html">fotmob_get_match_details()</a></code> - to get shooting locations for an individual match</li>
 <li>
 <code><a href="../reference/fotmob_get_match_players.html">fotmob_get_match_players()</a></code> - extract player statistics from matches</li>
+</ul></div>
+<div class="section level4">
+<h4 id="improvements-0-5-0">Improvements<a class="anchor" aria-label="anchor" href="#improvements-0-5-0"></a></h4>
+<ul><li>
+<code><a href="../reference/dot-clean_table_names.html">.clean_table_names()</a></code> (internal function) now able to clean tab names in <code><a href="../reference/fb_team_match_log_stats.html">fb_team_match_log_stats()</a></code>
+</li>
+<li><ul><li>Added documentation for <code>fotmob_get_match_players</code> and <code><a href="../reference/fotmob_get_match_players.html">fotmob_get_match_players()</a></code>
+</li>
+</ul></li>
+</ul></div>
+<div class="section level4">
+<h4 id="bugs-0-5-0">Bugs<a class="anchor" aria-label="anchor" href="#bugs-0-5-0"></a></h4>
+<ul><li>
+<code>fotmob_get_league_matches</code> and <code>fotmob_get_league_tables</code> updated to address new Fotmob league endpoint.</li>
+<li>
+<code><a href="../reference/fotmob_get_match_players.html">fotmob_get_match_players()</a></code> no longer returning the identical home and away team IDs <a href="https://github.com/JaseZiv/worldfootballR/issues/93" class="external-link">#93</a>
+</li>
+<li><ul><li>Fixed multiple rows returned for single player in <code>stats</code> column returned in <code><a href="../reference/fotmob_get_match_players.html">fotmob_get_match_players()</a></code>
+</li>
+</ul></li>
+<li>
+<code>fotmob_get_league_matches</code> and <code>fotmob_get_league_tables</code> updated to address new Fotmob league endpoint.</li>
 </ul><hr></div>
 </div>
     <div class="section level2">
