@@ -14,8 +14,8 @@
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="../deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><link href="../deps/_Roboto-0.4.1/font.css" rel="stylesheet">
+<link href="../deps/bootstrap-5.1.3/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.1.3/bootstrap.bundle.min.js"></script><link href="../deps/Roboto-0.4.2/font.css" rel="stylesheet">
 <!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Load Scraped Data Functions">
@@ -40,7 +40,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">worldfootballR</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.6.3000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.6.1.9000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,7 +98,7 @@
       <img src="../logo.png" class="logo" alt=""><h1>Load Scraped Data Functions</h1>
                         <h4 data-toc-skip class="author">Jason Zivkovic</h4>
             
-            <h4 data-toc-skip class="date">2022-07-10</h4>
+            <h4 data-toc-skip class="date">2022-11-19</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/JaseZiv/worldfootballR/blob/HEAD/vignettes/load-scraped-data.Rmd" class="external-link"><code>vignettes/load-scraped-data.Rmd</code></a></small>
       <div class="d-none name"><code>load-scraped-data.Rmd</code></div>
@@ -137,6 +137,8 @@
 </h2>
 <p>Package vignettes have been built to help you get started with the package.</p>
 <ul>
+<li>For functions to extract data from FBref, see <a href="https://jaseziv.github.io/worldfootballR/articles/extract-fbref-data.html">here</a>
+</li>
 <li>For functions to extract data from Transfermarkt, see <a href="https://jaseziv.github.io/worldfootballR/articles/extract-transfermarkt-data.html">here</a>
 </li>
 <li>For functions to extract data from Understat, see <a href="https://jaseziv.github.io/worldfootballR/articles/extract-understat-data.html">here</a>
@@ -145,8 +147,6 @@
 </li>
 <li>For functions to extract data for international matches from FBref, see <a href="https://jaseziv.github.io/worldfootballR/articles/fbref-data-internationals.html">here</a>
 </li>
-<li>For functions to load pre-scraped data, see <a href="https://jaseziv.github.io/worldfootballR/articles/load-scraped-data.html">here</a>
-</li>
 </ul>
 <p>This vignette will cover the functions to load scraped data from the <a href="https://github.com/JaseZiv/worldfootballR_data" class="external-link"><code>worldfootballR_data</code></a> data repository.</p>
 <p><strong>NOTE:</strong></p>
@@ -154,10 +154,14 @@
 <hr>
 </div>
 <div class="section level2">
-<h2 id="load-fbref-match-results">Load FBref match results<a class="anchor" aria-label="anchor" href="#load-fbref-match-results"></a>
+<h2 id="load-fbref">Load FBref<a class="anchor" aria-label="anchor" href="#load-fbref"></a>
 </h2>
+<p>The following section demonstrates the different loading functions of FBref data.</p>
+<div class="section level3">
+<h3 id="load-fbref-match-results">Load FBref match results<a class="anchor" aria-label="anchor" href="#load-fbref-match-results"></a>
+</h3>
 <p>To load pre-scraped match results for all years the data is available, the <code><a href="../reference/load_match_results.html">load_match_results()</a></code> function can be used. This data is scheduled to be updated most days and a print statement will inform the user of when the data was last updated. All domestic leagues are included in the data repository.</p>
-<p>This is the load function equivalent of <code><a href="../reference/get_match_results.html">get_match_results()</a></code>.</p>
+<p>This is the load function equivalent of <code><a href="../reference/fb_match_results.html">fb_match_results()</a></code>.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">eng_match_results</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/load_match_results.html">load_match_results</a></span><span class="op">(</span>country <span class="op">=</span> <span class="st">"ENG"</span>, gender <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"M"</span>, <span class="st">"F"</span><span class="op">)</span>, season_end_year <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2020</span><span class="op">:</span><span class="fl">2022</span><span class="op">)</span>, tier <span class="op">=</span> <span class="st">"1st"</span><span class="op">)</span></span>
 <span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html" class="external-link">glimpse</a></span><span class="op">(</span><span class="va">eng_match_results</span><span class="op">)</span></span>
@@ -172,88 +176,290 @@
 <span><span class="co">#&gt; $ Day              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Sat", "Sat", "Sun", "Sun", "Sun", "Sun", "Sun", "Sun…</span></span>
 <span><span class="co">#&gt; $ Date             <span style="color: #949494; font-style: italic;">&lt;date&gt;</span> 2019-09-07, 2019-09-07, 2019-09-08, 2019-09-08, 2019…</span></span>
 <span><span class="co">#&gt; $ Time             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "15:00", "15:00", "12:30", "14:00", "14:00", "14:30",…</span></span>
-<span><span class="co">#&gt; $ Home             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Manchester City", "Bristol City", "Chelsea", "Birmin…</span></span>
-<span><span class="co">#&gt; $ HomeGoals        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1, 0, 1, 0, 0, 2, 0, 2, 1, 1, 1, 0, 2, 4, 0, 0, 0, 3,…</span></span>
-<span><span class="co">#&gt; $ Home_xG          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0.3, 0.4, 1.4, 0.7, 0.8, 2.0, 0.2, 1.2, 1.2, 0.3, 0.8…</span></span>
-<span><span class="co">#&gt; $ Away             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Manchester Utd", "Brighton", "Tottenham", "Everton",…</span></span>
-<span><span class="co">#&gt; $ AwayGoals        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0, 0, 0, 1, 1, 1, 2, 0, 0, 1, 0, 1, 0, 0, 1, 2, 4, 0,…</span></span>
-<span><span class="co">#&gt; $ Away_xG          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0.6, 2.0, 0.3, 0.9, 1.2, 0.9, 2.3, 0.7, 0.3, 1.5, 0.8…</span></span>
-<span><span class="co">#&gt; $ Attendance       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 31213, 3041, 24564, 873, 1445, 1795, 897, 441, 996, 1…</span></span>
-<span><span class="co">#&gt; $ Venue            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Etihad Stadium", "Stoke Gifford Stadium", "Stamford …</span></span>
-<span><span class="co">#&gt; $ Referee          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Rebecca Welch", "Abigail Bryne", "Jack Packman", "El…</span></span>
+<span><span class="co">#&gt; $ Home             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Bristol City", "Manchester City", "Chelsea", "Liverp…</span></span>
+<span><span class="co">#&gt; $ HomeGoals        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0, 1, 1, 0, 0, 2, 2, 0, 1, 1, 1, 0, 2, 0, 4, 0, 0, 3,…</span></span>
+<span><span class="co">#&gt; $ Home_xG          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0.4, 0.5, 1.3, 0.5, 0.7, 2.6, 1.4, 0.2, 1.6, 0.4, 1.4…</span></span>
+<span><span class="co">#&gt; $ Away             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Brighton", "Manchester Utd", "Tottenham", "Reading",…</span></span>
+<span><span class="co">#&gt; $ AwayGoals        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0, 0, 0, 1, 1, 1, 0, 2, 0, 1, 0, 1, 0, 1, 0, 2, 4, 0,…</span></span>
+<span><span class="co">#&gt; $ Away_xG          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 2.1, 1.1, 0.3, 1.0, 0.8, 0.8, 1.0, 2.3, 0.3, 1.7, 0.9…</span></span>
+<span><span class="co">#&gt; $ Attendance       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 3041, 31213, 24564, 1445, 873, 1795, 441, 897, 996, 1…</span></span>
+<span><span class="co">#&gt; $ Venue            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Stoke Gifford Stadium", "Etihad Stadium", "Stamford …</span></span>
+<span><span class="co">#&gt; $ Referee          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Abigail Bryne", "Rebecca Welch", "Jack Packman", "Sa…</span></span>
 <span><span class="co">#&gt; $ Notes            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "", "", "", "", "", "", "", "", "", "", "", "", "", "…</span></span>
-<span><span class="co">#&gt; $ MatchURL         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "https://fbref.com/en/matches/f116cea0/Manchester-Der…</span></span></code></pre></div>
+<span><span class="co">#&gt; $ MatchURL         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "https://fbref.com/en/matches/fcf1626b/Bristol-City-B…</span></span></code></pre></div>
 </div>
-<div class="section level2">
-<h2 id="load-fbref-match-results-for-cups-and-international-comps">Load FBref match results for Cups and International Comps<a class="anchor" aria-label="anchor" href="#load-fbref-match-results-for-cups-and-international-comps"></a>
-</h2>
+<div class="section level3">
+<h3 id="load-fbref-match-results-for-cups-and-international-comps">Load FBref match results for Cups and International Comps<a class="anchor" aria-label="anchor" href="#load-fbref-match-results-for-cups-and-international-comps"></a>
+</h3>
 <p>Similarly, to load pre-scraped match results for cups and international matches in all years the data is available, the <code><a href="../reference/load_match_comp_results.html">load_match_comp_results()</a></code> function can be used. This data is scheduled to be updated most days and a print statement will inform the user of when the data was last updated.</p>
 <p>The following list of competitions (<code>comp_name</code>) are available:</p>
-<pre><code><span><span class="co">#&gt;  [1] "AFC Asian Cup"                              </span></span>
-<span><span class="co">#&gt;  [2] "AFC Asian Cup qualification"                </span></span>
-<span><span class="co">#&gt;  [3] "AFC Women's Asian Cup"                      </span></span>
-<span><span class="co">#&gt;  [4] "AFC Women's Asian Cup Qualification"        </span></span>
-<span><span class="co">#&gt;  [5] "Africa Cup of Nations"                      </span></span>
-<span><span class="co">#&gt;  [6] "Africa Cup of Nations qualification"        </span></span>
-<span><span class="co">#&gt;  [7] "Africa Women Cup of Nations"                </span></span>
-<span><span class="co">#&gt;  [8] "Algarve Cup"                                </span></span>
-<span><span class="co">#&gt;  [9] "CONCACAF Gold Cup"                          </span></span>
-<span><span class="co">#&gt; [10] "CONCACAF W Championship"                    </span></span>
-<span><span class="co">#&gt; [11] "Copa America"                               </span></span>
-<span><span class="co">#&gt; [12] "Copa América Femenina"                      </span></span>
-<span><span class="co">#&gt; [13] "Copa del Rey"                               </span></span>
-<span><span class="co">#&gt; [14] "Copa Libertadores de América"               </span></span>
-<span><span class="co">#&gt; [15] "Copa Sudamericana"                          </span></span>
-<span><span class="co">#&gt; [16] "Coppa Italia"                               </span></span>
-<span><span class="co">#&gt; [17] "Coupe de France"                            </span></span>
-<span><span class="co">#&gt; [18] "Coupe de la Ligue"                          </span></span>
-<span><span class="co">#&gt; [19] "DFB-Pokal"                                  </span></span>
-<span><span class="co">#&gt; [20] "DFB-Pokal Frauen"                           </span></span>
-<span><span class="co">#&gt; [21] "English Football League Cup"                </span></span>
-<span><span class="co">#&gt; [22] "European Championship"                      </span></span>
-<span><span class="co">#&gt; [23] "FA Cup"                                     </span></span>
-<span><span class="co">#&gt; [24] "FIFA Confederations Cup"                    </span></span>
-<span><span class="co">#&gt; [25] "FIFA Women's World Cup"                     </span></span>
-<span><span class="co">#&gt; [26] "FIFA Women's World Cup Qualification (UEFA)"</span></span>
-<span><span class="co">#&gt; [27] "FIFA World Cup"                             </span></span>
-<span><span class="co">#&gt; [28] "FIFA World Cup Qualification — AFC"         </span></span>
-<span><span class="co">#&gt; [29] "FIFA World Cup Qualification — CAF"         </span></span>
-<span><span class="co">#&gt; [30] "FIFA World Cup Qualification — CONCACAF"    </span></span>
-<span><span class="co">#&gt; [31] "FIFA World Cup Qualification — CONMEBOL"    </span></span>
-<span><span class="co">#&gt; [32] "FIFA World Cup Qualification — OFC"         </span></span>
-<span><span class="co">#&gt; [33] "FIFA World Cup Qualification — UEFA"        </span></span>
-<span><span class="co">#&gt; [34] "International Friendlies (M)"               </span></span>
-<span><span class="co">#&gt; [35] "International Friendlies (W)"               </span></span>
-<span><span class="co">#&gt; [36] "NWSL Challenge Cup"                         </span></span>
-<span><span class="co">#&gt; [37] "NWSL Fall Series"                           </span></span>
-<span><span class="co">#&gt; [38] "OFC Nations Cup"                            </span></span>
-<span><span class="co">#&gt; [39] "OFC Women's Nations Cup"                    </span></span>
-<span><span class="co">#&gt; [40] "Olympics – Women's Tournament"              </span></span>
-<span><span class="co">#&gt; [41] "SheBelieves Cup"                            </span></span>
-<span><span class="co">#&gt; [42] "UEFA Champions League"                      </span></span>
-<span><span class="co">#&gt; [43] "UEFA Euro Qualification"                    </span></span>
-<span><span class="co">#&gt; [44] "UEFA Europa Conference League"              </span></span>
-<span><span class="co">#&gt; [45] "UEFA Europa League"                         </span></span>
-<span><span class="co">#&gt; [46] "UEFA Nations League"                        </span></span>
-<span><span class="co">#&gt; [47] "UEFA Women's Champions League"              </span></span>
-<span><span class="co">#&gt; [48] "UEFA Women's Championship"                  </span></span>
-<span><span class="co">#&gt; [49] "UEFA Women's Euro Qualification"</span></span></code></pre>
+<pre><code><span><span class="co">#&gt;  [1] "AFC Asian Cup"                                               </span></span>
+<span><span class="co">#&gt;  [2] "AFC Asian Cup qualification"                                 </span></span>
+<span><span class="co">#&gt;  [3] "AFC Women's Asian Cup"                                       </span></span>
+<span><span class="co">#&gt;  [4] "AFC Women's Asian Cup Qualification"                         </span></span>
+<span><span class="co">#&gt;  [5] "Africa Cup of Nations"                                       </span></span>
+<span><span class="co">#&gt;  [6] "Africa Cup of Nations qualification"                         </span></span>
+<span><span class="co">#&gt;  [7] "Africa Women Cup of Nations"                                 </span></span>
+<span><span class="co">#&gt;  [8] "Algarve Cup"                                                 </span></span>
+<span><span class="co">#&gt;  [9] "CONCACAF Gold Cup"                                           </span></span>
+<span><span class="co">#&gt; [10] "CONCACAF W Championship"                                     </span></span>
+<span><span class="co">#&gt; [11] "CONMEBOL Copa América"                                       </span></span>
+<span><span class="co">#&gt; [12] "Copa América Femenina"                                       </span></span>
+<span><span class="co">#&gt; [13] "Copa del Rey"                                                </span></span>
+<span><span class="co">#&gt; [14] "Copa Libertadores de América"                                </span></span>
+<span><span class="co">#&gt; [15] "Copa Sudamericana"                                           </span></span>
+<span><span class="co">#&gt; [16] "Coppa Italia"                                                </span></span>
+<span><span class="co">#&gt; [17] "Coupe de France"                                             </span></span>
+<span><span class="co">#&gt; [18] "Coupe de la Ligue"                                           </span></span>
+<span><span class="co">#&gt; [19] "DFB-Pokal"                                                   </span></span>
+<span><span class="co">#&gt; [20] "DFB-Pokal Frauen"                                            </span></span>
+<span><span class="co">#&gt; [21] "EFL Cup"                                                     </span></span>
+<span><span class="co">#&gt; [22] "FA Cup"                                                      </span></span>
+<span><span class="co">#&gt; [23] "FIFA Confederations Cup"                                     </span></span>
+<span><span class="co">#&gt; [24] "FIFA Women's World Cup"                                      </span></span>
+<span><span class="co">#&gt; [25] "FIFA Women's World Cup Qualification (UEFA)"                 </span></span>
+<span><span class="co">#&gt; [26] "FIFA World Cup"                                              </span></span>
+<span><span class="co">#&gt; [27] "FIFA World Cup Qualification — AFC"                          </span></span>
+<span><span class="co">#&gt; [28] "FIFA World Cup Qualification — CAF"                          </span></span>
+<span><span class="co">#&gt; [29] "FIFA World Cup Qualification — CONCACAF"                     </span></span>
+<span><span class="co">#&gt; [30] "FIFA World Cup Qualification — CONMEBOL"                     </span></span>
+<span><span class="co">#&gt; [31] "FIFA World Cup Qualification — Inter-confederation play-offs"</span></span>
+<span><span class="co">#&gt; [32] "FIFA World Cup Qualification — OFC"                          </span></span>
+<span><span class="co">#&gt; [33] "FIFA World Cup Qualification — UEFA"                         </span></span>
+<span><span class="co">#&gt; [34] "International Friendlies (M)"                                </span></span>
+<span><span class="co">#&gt; [35] "International Friendlies (W)"                                </span></span>
+<span><span class="co">#&gt; [36] "NWSL Challenge Cup"                                          </span></span>
+<span><span class="co">#&gt; [37] "NWSL Fall Series"                                            </span></span>
+<span><span class="co">#&gt; [38] "OFC Nations Cup"                                             </span></span>
+<span><span class="co">#&gt; [39] "OFC Women's Nations Cup"                                     </span></span>
+<span><span class="co">#&gt; [40] "Olympics — Women's Tournament"                               </span></span>
+<span><span class="co">#&gt; [41] "SheBelieves Cup"                                             </span></span>
+<span><span class="co">#&gt; [42] "UEFA Champions League"                                       </span></span>
+<span><span class="co">#&gt; [43] "UEFA Europa Conference League"                               </span></span>
+<span><span class="co">#&gt; [44] "UEFA Europa League"                                          </span></span>
+<span><span class="co">#&gt; [45] "UEFA European Football Championship"                         </span></span>
+<span><span class="co">#&gt; [46] "UEFA European Football Championship Qualifying"              </span></span>
+<span><span class="co">#&gt; [47] "UEFA Nations League"                                         </span></span>
+<span><span class="co">#&gt; [48] "UEFA Women's Champions League"                               </span></span>
+<span><span class="co">#&gt; [49] "UEFA Women's Championship"                                   </span></span>
+<span><span class="co">#&gt; [50] "UEFA Women's Euro Qualification"</span></span></code></pre>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">cups</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"FIFA Women's World Cup"</span>,<span class="st">"FIFA World Cup"</span><span class="op">)</span></span>
 <span><span class="va">world_cups</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/load_match_comp_results.html">load_match_comp_results</a></span><span class="op">(</span>comp_name <span class="op">=</span> <span class="va">cups</span><span class="op">)</span></span>
-<span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html" class="external-link">glimpse</a></span><span class="op">(</span><span class="va">world_cups</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html" class="external-link">glimpse</a></span><span class="op">(</span><span class="va">world_cups</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Rows: 1,232</span></span>
+<span><span class="co">#&gt; Columns: 20</span></span>
+<span><span class="co">#&gt; $ Competition_Name <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "FIFA Women's World Cup", "FIFA Women's World Cup", "…</span></span>
+<span><span class="co">#&gt; $ Gender           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "F", "F", "F", "F", "F", "F", "F", "F", "F", "F", "F"…</span></span>
+<span><span class="co">#&gt; $ Country          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…</span></span>
+<span><span class="co">#&gt; $ Season_End_Year  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 1991, 1991, 1991, 1991, 1991, 1991, 1991, 1991, 1991,…</span></span>
+<span><span class="co">#&gt; $ Round            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Group stage", "Group stage", "Group stage", "Group s…</span></span>
+<span><span class="co">#&gt; $ Wk               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…</span></span>
+<span><span class="co">#&gt; $ Day              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Sat", "Sun", "Sun", "Sun", "Sun", "Sun", "Tue", "Tue…</span></span>
+<span><span class="co">#&gt; $ Date             <span style="color: #949494; font-style: italic;">&lt;date&gt;</span> 1991-11-16, 1991-11-17, 1991-11-17, 1991-11-17, 1991…</span></span>
+<span><span class="co">#&gt; $ Time             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "20:45", "15:30", "19:45", "19:45", "19:45", "19:45",…</span></span>
+<span><span class="co">#&gt; $ Home             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "China PR cn", "Germany de", "Japan jp", "Chinese Tai…</span></span>
+<span><span class="co">#&gt; $ HomeGoals        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 4, 4, 0, 0, 2, 3, 4, 1, 0, 0, 0, 2, 0, 0, 4, 2, 2, 0,…</span></span>
+<span><span class="co">#&gt; $ Home_xG          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…</span></span>
+<span><span class="co">#&gt; $ Away             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "no Norway", "ng Nigeria", "br Brazil", "it Italy", "…</span></span>
+<span><span class="co">#&gt; $ AwayGoals        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0, 0, 1, 5, 3, 0, 0, 0, 3, 5, 8, 2, 3, 2, 1, 0, 1, 2,…</span></span>
+<span><span class="co">#&gt; $ Away_xG          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…</span></span>
+<span><span class="co">#&gt; $ Attendance       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 65000, 14000, 14000, 11000, 14000, 14000, 12000, 1200…</span></span>
+<span><span class="co">#&gt; $ Venue            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Tianhe Stadium (Neutral Site)", "Jiangmen Stadium (N…</span></span>
+<span><span class="co">#&gt; $ Referee          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Salvador Imperatore Marcone", "Rafael Rodriguez", "L…</span></span>
+<span><span class="co">#&gt; $ Notes            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "", "", "", "", "", "", "", "", "", "", "", "", "", "…</span></span>
+<span><span class="co">#&gt; $ MatchURL         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "https://fbref.com/en/matches/0d9e0f26/China-PR-Norwa…</span></span></code></pre></div>
 </div>
-<div class="section level2">
-<h2 id="load-fbref-big-5-league-advanced-season-stats">Load FBref big 5 league advanced season stats<a class="anchor" aria-label="anchor" href="#load-fbref-big-5-league-advanced-season-stats"></a>
-</h2>
+<div class="section level3">
+<h3 id="load-fbref-big-5-league-advanced-season-stats">Load FBref big 5 league advanced season stats<a class="anchor" aria-label="anchor" href="#load-fbref-big-5-league-advanced-season-stats"></a>
+</h3>
 <p>To load pre-scraped advanced stats for the big five European leagues for either teams or players, the <code><a href="../reference/load_fb_big5_advanced_season_stats.html">load_fb_big5_advanced_season_stats()</a></code> can be used. This data is scheduled to be updated most days and a print statement will inform the user of when the data was last updated.</p>
-<p>This is the load function equivalent of <code><a href="../reference/get_match_results.html">get_match_results()</a></code>.</p>
+<p>This is the load function equivalent of <code><a href="../reference/fb_big5_advanced_season_stats.html">fb_big5_advanced_season_stats()</a></code>.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">all_season_player</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/load_fb_big5_advanced_season_stats.html">load_fb_big5_advanced_season_stats</a></span><span class="op">(</span>stat_type <span class="op">=</span> <span class="st">"defense"</span>, team_or_player <span class="op">=</span> <span class="st">"player"</span><span class="op">)</span></span>
 <span><span class="va">current_season_player</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/load_fb_big5_advanced_season_stats.html">load_fb_big5_advanced_season_stats</a></span><span class="op">(</span>season_end_year <span class="op">=</span> <span class="fl">2022</span>, stat_type <span class="op">=</span> <span class="st">"defense"</span>, team_or_player <span class="op">=</span> <span class="st">"player"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">all_season_team</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/load_fb_big5_advanced_season_stats.html">load_fb_big5_advanced_season_stats</a></span><span class="op">(</span>stat_type <span class="op">=</span> <span class="st">"defense"</span>, team_or_player <span class="op">=</span> <span class="st">"team"</span><span class="op">)</span></span>
 <span><span class="va">current_season_team</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/load_fb_big5_advanced_season_stats.html">load_fb_big5_advanced_season_stats</a></span><span class="op">(</span>season_end_year <span class="op">=</span> <span class="fl">2022</span>, stat_type <span class="op">=</span> <span class="st">"defense"</span>, team_or_player <span class="op">=</span> <span class="st">"team"</span><span class="op">)</span></span></code></pre></div>
+<hr>
+</div>
+</div>
+<div class="section level2">
+<h2 id="load-understat">Load Understat<a class="anchor" aria-label="anchor" href="#load-understat"></a>
+</h2>
+<p>The following section demonstrates the different loading functions of Understat data.</p>
+<div class="section level3">
+<h3 id="load-league-shots">Load League Shots<a class="anchor" aria-label="anchor" href="#load-league-shots"></a>
+</h3>
+<p>To be able to rapidly load pre-collected chooting locations for whole leagues, the <code><a href="../reference/load_understat_league_shots.html">load_understat_league_shots()</a></code> functions is now available. Supported leagues on Understat are:</p>
+<ul>
+<li>“EPL”</li>
+<li>“La liga”</li>
+<li>“Bundesliga”</li>
+<li>“Serie A”</li>
+<li>“Ligue 1”</li>
+<li>“RFPL”</li>
+</ul>
+<p>This is effectively the loading equivalent of the <code><a href="../reference/understat_league_season_shots.html">understat_league_season_shots()</a></code> function, however rather than needing to be scraped a season at a time, this data loads rapidly for all seasons for the selected league since the 2014/15 seasons.</p>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">serie_a_shot_locations</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/load_understat_league_shots.html">load_understat_league_shots</a></span><span class="op">(</span>league <span class="op">=</span> <span class="st">"Serie A"</span><span class="op">)</span></span>
+<span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html" class="external-link">glimpse</a></span><span class="op">(</span><span class="va">serie_a_shot_locations</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Rows: 80,802</span></span>
+<span><span class="co">#&gt; Columns: 21</span></span>
+<span><span class="co">#&gt; $ league          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Serie_A", "Serie_A", "Serie_A", "Serie_A", "Serie_A",…</span></span>
+<span><span class="co">#&gt; $ id              <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 41439, 41444, 41445, 41446, 41451, 41452, 41461, 41462…</span></span>
+<span><span class="co">#&gt; $ minute          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 2, 5, 7, 8, 19, 24, 76, 76, 0, 3, 3, 3, 5, 10, 15, 15,…</span></span>
+<span><span class="co">#&gt; $ result          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "MissedShots", "OwnGoal", "SavedShot", "MissedShots", …</span></span>
+<span><span class="co">#&gt; $ X               <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0.845, 0.009, 0.896, 0.875, 0.813, 0.780, 0.780, 0.867…</span></span>
+<span><span class="co">#&gt; $ Y               <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0.641, 0.539, 0.373, 0.661, 0.180, 0.374, 0.499, 0.520…</span></span>
+<span><span class="co">#&gt; $ xG              <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0.009113184, 0.000000000, 0.019183254, 0.042726491, 0.…</span></span>
+<span><span class="co">#&gt; $ player          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Maxi López", "Cristiano Biraghi", "Ezequiel Schelotto…</span></span>
+<span><span class="co">#&gt; $ h_a             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "h", "h", "h", "h", "h", "h", "h", "h", "a", "a", "a",…</span></span>
+<span><span class="co">#&gt; $ player_id       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1188, 1164, 3873, 1188, 1336, 3873, 716, 1188, 3848, 1…</span></span>
+<span><span class="co">#&gt; $ situation       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "OpenPlay", "FromCorner", "OpenPlay", "SetPiece", "Fro…</span></span>
+<span><span class="co">#&gt; $ season          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 2014, 2014, 2014, 2014, 2014, 2014, 2014, 2014, 2014, …</span></span>
+<span><span class="co">#&gt; $ shotType        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Head", "OtherBodyPart", "Head", "RightFoot", "LeftFoo…</span></span>
+<span><span class="co">#&gt; $ match_id        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 5149, 5149, 5149, 5149, 5149, 5149, 5149, 5149, 5149, …</span></span>
+<span><span class="co">#&gt; $ home_team       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Chievo", "Chievo", "Chievo", "Chievo", "Chievo", "Chi…</span></span>
+<span><span class="co">#&gt; $ away_team       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Juventus", "Juventus", "Juventus", "Juventus", "Juven…</span></span>
+<span><span class="co">#&gt; $ home_goals      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …</span></span>
+<span><span class="co">#&gt; $ away_goals      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …</span></span>
+<span><span class="co">#&gt; $ date            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "2014-08-30 17:00:00", "2014-08-30 17:00:00", "2014-08…</span></span>
+<span><span class="co">#&gt; $ player_assisted <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Cristiano Biraghi", NA, "Nicolas Frey", "Ezequiel Sch…</span></span>
+<span><span class="co">#&gt; $ lastAction      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Cross", "CrossNotClaimed", "Cross", "Pass", "Pass", "…</span></span></code></pre></div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="load-fotmob">Load fotmob<a class="anchor" aria-label="anchor" href="#load-fotmob"></a>
+</h2>
+<p>The following section demonstrates the different loading functions of Understat data.</p>
+<div class="section level3">
+<h3 id="load-fotmob-big-5-match-shots">Load fotmob Big 5 Match Shots<a class="anchor" aria-label="anchor" href="#load-fotmob-big-5-match-shots"></a>
+</h3>
+<p><code><a href="../reference/load_fotmob_match_details.html">load_fotmob_match_details()</a></code> returns match details dating back to the 2020/21 season (some matches may be missing) for each of the following leagues:</p>
+<ul>
+<li>EURO: 50</li>
+<li>Champions League: 42</li>
+<li>Copa America: 44</li>
+<li>Europa League: 73</li>
+<li>Premier League: 47</li>
+<li><ol style="list-style-type: decimal">
+<li>Bundesliga: 54</li>
+</ol></li>
+<li>LaLiga: 87</li>
+<li>Ligue 1: 53</li>
+<li>MLS: 130</li>
+<li>Serie A: 55</li>
+</ul>
+<p>This is effectively the loading equivalent of the <code><a href="../reference/fotmob_get_match_details.html">fotmob_get_match_details()</a></code> function for all matches for these leagues back to the beginning of the 2020/21 season.</p>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">epl_match_details</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/load_fotmob_match_details.html">load_fotmob_match_details</a></span><span class="op">(</span></span>
+<span>  country <span class="op">=</span> <span class="st">"ENG"</span>,</span>
+<span>  league_name <span class="op">=</span> <span class="st">"Premier League"</span></span>
+<span><span class="op">)</span></span>
+<span><span class="co">## or</span></span>
+<span><span class="co">## load_fotmob_match_details(league_id = 47)</span></span>
+<span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html" class="external-link">glimpse</a></span><span class="op">(</span><span class="va">epl_match_details</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Rows: 22,711</span></span>
+<span><span class="co">#&gt; Columns: 42</span></span>
+<span><span class="co">#&gt; $ match_id                 <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 3411352, 3411352, 3411352, 3411352, 3411352, …</span></span>
+<span><span class="co">#&gt; $ match_round              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "1", "1", "1", "1", "1", "1", "1", "1", "1", …</span></span>
+<span><span class="co">#&gt; $ league_id                <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 4…</span></span>
+<span><span class="co">#&gt; $ league_name              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Premier League", "Premier League", "Premier …</span></span>
+<span><span class="co">#&gt; $ league_round_name        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Premier League Round 1", "Premier League Rou…</span></span>
+<span><span class="co">#&gt; $ parent_league_id         <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 4…</span></span>
+<span><span class="co">#&gt; $ parent_league_season     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "2022/2023", "2022/2023", "2022/2023", "2022/…</span></span>
+<span><span class="co">#&gt; $ match_time_utc           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Sat, Sep 12, 2020, 11:30 UTC", "Sat, Sep 12,…</span></span>
+<span><span class="co">#&gt; $ home_team_id             <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 9879, 9879, 9879, 9879, 9879, 9879, 9879, 987…</span></span>
+<span><span class="co">#&gt; $ home_team                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Fulham", "Fulham", "Fulham", "Fulham", "Fulh…</span></span>
+<span><span class="co">#&gt; $ home_team_color          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "#000000", "#000000", "#000000", "#000000", "…</span></span>
+<span><span class="co">#&gt; $ away_team_id             <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 9825, 9825, 9825, 9825, 9825, 9825, 9825, 982…</span></span>
+<span><span class="co">#&gt; $ away_team                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Arsenal", "Arsenal", "Arsenal", "Arsenal", "…</span></span>
+<span><span class="co">#&gt; $ away_team_color          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "#bd0510", "#bd0510", "#bd0510", "#bd0510", "…</span></span>
+<span><span class="co">#&gt; $ id                       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 2210246139, 2210246547, 2210246571, 221024658…</span></span>
+<span><span class="co">#&gt; $ event_type               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "AttemptSaved", "Miss", "AttemptSaved", "Goal…</span></span>
+<span><span class="co">#&gt; $ team_id                  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 9879, 9825, 9825, 9825, 9879, 9825, 9825, 982…</span></span>
+<span><span class="co">#&gt; $ player_id                <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 149150, 207236, 94086, 169193, 240478, 339992…</span></span>
+<span><span class="co">#&gt; $ player_name              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Denis Odoi", "Granit Xhaka", "Willian", "Ale…</span></span>
+<span><span class="co">#&gt; $ x                        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 84.73738, 90.30000, 100.63793, 102.53448, 98.…</span></span>
+<span><span class="co">#&gt; $ y                        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 18.25401, 41.42563, 33.46625, 31.71250, 23.01…</span></span>
+<span><span class="co">#&gt; $ min                      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 7, 8, 8, 8, 10, 21, 21, 27, 37, 49, 56, 57, 6…</span></span>
+<span><span class="co">#&gt; $ min_added                <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…</span></span>
+<span><span class="co">#&gt; $ is_blocked               <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE…</span></span>
+<span><span class="co">#&gt; $ is_on_target             <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> TRUE, FALSE, TRUE, TRUE, TRUE, TRUE, FALSE, T…</span></span>
+<span><span class="co">#&gt; $ goal_crossed_y           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 31.56000, 26.28531, 32.32250, 30.87375, 31.94…</span></span>
+<span><span class="co">#&gt; $ expected_goals           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0.0274, 0.0602, 0.7366, 0.8446, 0.0455, 0.087…</span></span>
+<span><span class="co">#&gt; $ expected_goals_on_target <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0.1150, NA, 0.9631, 0.9935, NA, NA, NA, NA, 0…</span></span>
+<span><span class="co">#&gt; $ shot_type                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "LeftFoot", "LeftFoot", "RightFoot", "LeftFoo…</span></span>
+<span><span class="co">#&gt; $ situation                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "RegularPlay", "RegularPlay", "RegularPlay", …</span></span>
+<span><span class="co">#&gt; $ period                   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "FirstHalf", "FirstHalf", "FirstHalf", "First…</span></span>
+<span><span class="co">#&gt; $ is_own_goal              <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FAL…</span></span>
+<span><span class="co">#&gt; $ on_goal_shot_x           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1.645503e+00, 2.000000e+00, 1.443783e+00, 1.8…</span></span>
+<span><span class="co">#&gt; $ on_goal_shot_y           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 0.29047619, 0.03495724, 0.04246728, 0.0645502…</span></span>
+<span><span class="co">#&gt; $ on_goal_shot_zoom_ratio  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1.0000000, 0.4899745, 1.0000000, 1.0000000, 1…</span></span>
+<span><span class="co">#&gt; $ first_name               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Denis", "Granit", "", "Alexandre", "Neeskens…</span></span>
+<span><span class="co">#&gt; $ last_name                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Odoi", "Xhaka", "Willian", "Lacazette", "Keb…</span></span>
+<span><span class="co">#&gt; $ team_color               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "#000000", "#bd0510", "#bd0510", "#bd0510", "…</span></span>
+<span><span class="co">#&gt; $ short_name               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…</span></span>
+<span><span class="co">#&gt; $ blocked_x                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…</span></span>
+<span><span class="co">#&gt; $ blocked_y                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…</span></span>
+<span><span class="co">#&gt; $ goal_crossed_z           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…</span></span>
+<span></span>
+<span><span class="co">## multiple leagues at once</span></span>
+<span><span class="va">epl_ll_match_details</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/load_fotmob_match_details.html">load_fotmob_match_details</a></span><span class="op">(</span>league_id <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">47</span>, <span class="fl">87</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p>Note that fotmob does not currently have match details prior to 2020/21.</p>
+<p><code><a href="../reference/load_fotmob_matches_by_date.html">load_fotmob_matches_by_date()</a></code> can be used to retrieve fotmob match ids dating back to August 2017.</p>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">epl_matches</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/load_fotmob_matches_by_date.html">load_fotmob_matches_by_date</a></span><span class="op">(</span></span>
+<span>  country <span class="op">=</span> <span class="st">"ENG"</span>,</span>
+<span>  league_name <span class="op">=</span> <span class="st">"Premier League"</span></span>
+<span><span class="op">)</span></span>
+<span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html" class="external-link">glimpse</a></span><span class="op">(</span><span class="va">epl_matches</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Rows: 2,197</span></span>
+<span><span class="co">#&gt; Columns: 39</span></span>
+<span><span class="co">#&gt; $ date                              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "2017-08-11", "2017-08-12", "2017-08…</span></span>
+<span><span class="co">#&gt; $ ccode                             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "ENG", "ENG", "ENG", "ENG", "ENG", "…</span></span>
+<span><span class="co">#&gt; $ id                                <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 47, 47, 47, 47, 47, 47, 47, 47, 47, …</span></span>
+<span><span class="co">#&gt; $ primary_id                        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 47, 47, 47, 47, 47, 47, 47, 47, 47, …</span></span>
+<span><span class="co">#&gt; $ name                              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Premier League", "Premier League", …</span></span>
+<span><span class="co">#&gt; $ match_id                          <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 2522743, 2522751, 2522745, 2522746, …</span></span>
+<span><span class="co">#&gt; $ match_league_id                   <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 47, 47, 47, 47, 47, 47, 47, 47, 47, …</span></span>
+<span><span class="co">#&gt; $ match_time                        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "11.08.2017 20:45", "12.08.2017 13:3…</span></span>
+<span><span class="co">#&gt; $ home_id                           <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 9825, 9817, 8455, 9826, 8668, 8466, …</span></span>
+<span><span class="co">#&gt; $ home_score                        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 4, 3, 2, 0, 1, 0, 1, 0, 0, 4, 0, 0, …</span></span>
+<span><span class="co">#&gt; $ home_name                         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Arsenal", "Watford", "Chelsea", "Cr…</span></span>
+<span><span class="co">#&gt; $ home_long_name                    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Arsenal", "Watford", "Chelsea", "Cr…</span></span>
+<span><span class="co">#&gt; $ away_id                           <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 8197, 8650, 8191, 9796, 10194, 10003…</span></span>
+<span><span class="co">#&gt; $ away_score                        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 3, 3, 3, 3, 0, 0, 0, 2, 2, 0, 4, 2, …</span></span>
+<span><span class="co">#&gt; $ away_name                         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Leicester", "Liverpool", "Burnley",…</span></span>
+<span><span class="co">#&gt; $ away_long_name                    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Leicester City", "Liverpool", "Burn…</span></span>
+<span><span class="co">#&gt; $ match_eliminated_team_id          <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, …</span></span>
+<span><span class="co">#&gt; $ match_status_id                   <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, …</span></span>
+<span><span class="co">#&gt; $ match_tournament_stage            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "1", "1", "1", "1", "1", "1", "1", "…</span></span>
+<span><span class="co">#&gt; $ match_status_finished             <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, …</span></span>
+<span><span class="co">#&gt; $ match_status_started              <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, …</span></span>
+<span><span class="co">#&gt; $ match_status_cancelled            <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> FALSE, FALSE, FALSE, FALSE, FALSE, F…</span></span>
+<span><span class="co">#&gt; $ match_status_score_str            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "4 - 3", "3 - 3", "2 - 3", "0 - 3", …</span></span>
+<span><span class="co">#&gt; $ match_status_start_date_str       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "Aug 11, 2017", "Aug 12, 2017", "Aug…</span></span>
+<span><span class="co">#&gt; $ match_status_start_date_str_short <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "11. Aug.", "12. Aug.", "12. Aug.", …</span></span>
+<span><span class="co">#&gt; $ match_status_start_time_str       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, …</span></span>
+<span><span class="co">#&gt; $ match_status_aggregated_str       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, …</span></span>
+<span><span class="co">#&gt; $ match_time_ts                     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> 1.502459e+12, 1.502519e+12, 1.502528…</span></span>
+<span><span class="co">#&gt; $ match_tv                          <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, …</span></span>
+<span><span class="co">#&gt; $ internal_rank                     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 10, 10, 10, 10, 10, 10, 10, 10, 10, …</span></span>
+<span><span class="co">#&gt; $ live_rank                         <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 101, 101, 101, 101, 101, 101, 101, 1…</span></span>
+<span><span class="co">#&gt; $ simple_league                     <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> FALSE, FALSE, FALSE, FALSE, FALSE, F…</span></span>
+<span><span class="co">#&gt; $ parent_league_id                  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, …</span></span>
+<span><span class="co">#&gt; $ home_pen_score                    <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, …</span></span>
+<span><span class="co">#&gt; $ away_pen_score                    <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, …</span></span>
+<span><span class="co">#&gt; $ match_status_awarded              <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, …</span></span>
+<span><span class="co">#&gt; $ is_group                          <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, …</span></span>
+<span><span class="co">#&gt; $ group_name                        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, …</span></span>
+<span><span class="co">#&gt; $ parent_league_name                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> NA, NA, NA, NA, NA, NA, NA, NA, NA, …</span></span>
+<span></span>
+<span><span class="co">## multiple leagues at once</span></span>
+<span><span class="va">epl_ll_matches</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/load_fotmob_matches_by_date.html">load_fotmob_matches_by_date</a></span><span class="op">(</span>league_id <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">47</span>, <span class="fl">87</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+</div>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside>
@@ -268,7 +474,7 @@
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
     </footer>
